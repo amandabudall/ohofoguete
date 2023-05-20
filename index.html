@@ -50,13 +50,13 @@
     y = 10
     TOPO = ""
     ESQUERDA = "" 
-    temporizador = setTimeout(subir,1000)
+    temporizador = setTimeout(subir,16000)
     
     function subir()
     {   
         TOPO = y + "px"
         
-        $("#foguete").animate({top:TOPO,},1000)
+        $("#foguete").animate({top:TOPO,},16000)
         temporizador = null
         temporizador = setInterval(Descer,1000)
     }
@@ -76,7 +76,7 @@
     }
         
         function Pega_Tecla(e) 
-    {   	
+    {       
         e = e || window.event;
         tecla = e.keyCode;
         console.log(tecla); // MOSTRA O CÓDIGO DA TECLA PRESSIONADA  
@@ -98,19 +98,7 @@
                     x = x + 20
            
                 }  
-        }
-
-          
+        }    
     }
-
-    <p id="demo"></p>
- 
-
-function myFunction() {
-  var x = document.getElementById("myAudio").autoplay;
-  document.getElementById("demo").innerHTML = x;
-}
-
-
 </script>
 </html>
