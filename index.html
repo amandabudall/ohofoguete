@@ -32,7 +32,10 @@
 <body>
     <img src="glo.png" class="chao">  
  <img onclick="subir()" src="foguete.gif" width="80px" class="foguete" id="foguete">
-  
+ <audio id="myAudio" controls autoplay>
+    <source src="au.ogg" type="audio/ogg">
+    <source src="au.mp3" type="audio/mpeg"> 
+  </audio>
 </body>
 <script src="jquery-3.6.4.min.js"></script>
 <script>
@@ -99,6 +102,15 @@
 
           
     }
+
+    <p id="demo"></p>
+ 
+
+function myFunction() {
+  var x = document.getElementById("myAudio").autoplay;
+  document.getElementById("demo").innerHTML = x;
+}
+
 
 </script>
 </html>
